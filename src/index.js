@@ -24,7 +24,7 @@ import {
   Partn,
   History
 
-} from "./components/index.js";
+} from "./components";
 ReactDOM.createRoot(document.getElementById('root')).render(
      <Router>
   <Navigation />
@@ -40,7 +40,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Route path="/SanPham/technical" element={<K_TECHNICAL />}/>
     {/* <Route path="/Admin" element={<Admin />} /> */}
   </Routes>
-  <Footer claName="footer"/>
+  <Footer className="footer"/>
 </Router> 
 )
 
