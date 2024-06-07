@@ -24,7 +24,7 @@ import {
   Partn,
   History
 
-} from "./components";
+} from "./components/index.js";
 ReactDOM.createRoot(document.getElementById('root')).render(
      <Router>
   <Navigation />
