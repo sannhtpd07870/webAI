@@ -1,0 +1,19 @@
+.partener{
+    margin-top: 20px !important;
+width: 1461px;
+max-width: calc(100vw - 40px);
+display: flex;
+}
+
+.partener .row{
+
+ flex-wrap: nowrap;
+justify-content: center;
+align-items: center;
+
+}
+.strategic-item-wrap{
+width: 347px;
+margin: 20px !important;
+}
+
