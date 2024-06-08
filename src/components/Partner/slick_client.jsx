@@ -25,8 +25,7 @@ function SamplePrevArrow(props) {
     />
   );
 }
-
-const slick_client =(client) => {
+const Slick_client = ({ images }) => {
   const settings = {
     dots: true,
     infinite: true,
@@ -35,15 +34,19 @@ const slick_client =(client) => {
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />
   };
+
   return (
     <div className="slider-container">
       <Slider {...settings}>
-        <div>
-        <img src={client.image} />
-        </div>
+        {images.map((imagePath, index) => (
+          <div key={index}>
+            <img src={imagePath} alt={`Image ${index}`} />
+          </div>
+        ))}
       </Slider>
     </div>
   );
 }
+
 
 export default slick_client;

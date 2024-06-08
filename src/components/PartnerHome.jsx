@@ -13,8 +13,7 @@ const importAll = (r) => {
 const images = importAll(require.context('../image/client-logo', false, /\.(png|jpe?g|svg)$/));
 
 const PartnerHome =(r) =>{
-     const a = 'https://www.w3schools.com/howto/img_nature_wide.jpg';
-     const imagePaths = images.map(image => image.default);
+  
 return( 
 <>
 <Banner img={a}  title="ĐỐI TÁC-KHÁCH HÀNG    " />
@@ -29,7 +28,8 @@ return(
 </div >
 
 <div>
-        <Slick_client images={imagePaths}  />
+      
+        <Slick_client  />
     
     </div>
 </div>
