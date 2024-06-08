@@ -23,13 +23,13 @@ const Navigation =(menu)=> {
                 </button> 
             <div className="collapse navbar-collapse" id="navbarCollapse">
                 <div className="navbar-nav ">
-                    <a href="/about" className="nav-item nav-link">Về KCL</a>
+                    <a href="/About" className="nav-item nav-link">Về KCL</a>
                     <div className="nav-item dropdown">
                         <a href="/SanPham" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Sản phẩm - Dịch vụ</a>
                         <div className="dropdown-menu mt-2">
-                            <a href="/SanPham/solution" className="dropdown-item">K.SOLUTION</a>
-                            <a href="/SanPham/healthtech" className="dropdown-item">K.HEALTHTECH </a>
-                            <a href="/SanPham/technical" className="dropdown-item">K.TECHNICAL</a>
+                            <a href="/SanPham/Solution" className="dropdown-item">K.SOLUTION</a>
+                            <a href="/SanPham/Healthtech" className="dropdown-item">K.HEALTHTECH </a>
+                            <a href="/SanPham/Technical" className="dropdown-item">K.TECHNICAL</a>
                         </div>
                     </div>
                     <a href="/DoiTac" className="nav-item nav-link">ĐỐI TÁC - KHÁCH HÀNG</a>
