@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: my-react-app
+    name: Web-test
     env: static
     staticPublishPath: build
     buildCommand: npm run build
