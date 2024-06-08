@@ -1,19 +1,16 @@
 
 import Partner from "./Partner/Partner";
-import Slick_client from "./Partner/slick_client";
+// import Slick_client from "./Partner/slick_client";
 import "./Partner.css"
 import {
  Banner
 } from "../components"
 
-const importAll = (r) => {
-  return r.keys().map(r);
-};
 
-const images = importAll(require.context('../image/client-logo', false, /\.(png|jpe?g|svg)$/));
+
 
 const PartnerHome =(r) =>{
-  
+  const a = "https://t3.ftcdn.net/jpg/05/14/95/12/360_F_514951224_2dxMLbIw5qNRdPGD003chpbVcxWtcp7K.jpg "
 return( 
 <>
 <Banner img={a}  title="ĐỐI TÁC-KHÁCH HÀNG    " />
@@ -27,11 +24,11 @@ return(
     </div>
 </div >
 
-<div>
+{/* <div>
       
         <Slick_client  />
     
-    </div>
+    </div> */}
 </div>
 
 </>
