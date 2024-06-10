@@ -62,7 +62,7 @@ const years = [
     }
   ];
 
-function History () {
+function history () {
     
     const [stickyTop, setStickyTop] = useState(0);
     const [scrollTarget, setScrollTarget] = useState(false);
@@ -187,4 +187,4 @@ function History () {
     );
   };
   
-export default History;
+export default history;
