@@ -36,12 +36,8 @@ const Slide=()=> {
               carouselRef.current.removeEventListener('slide.bs.carousel', handleSlide);
           };
       };
-      if (slideImage) {
-        slideImage.classList.add('animate__flipInX');
-        setTimeout(() => {
-            slideImage.classList.remove('animate__flipOutX');
-        }, 1000); // Thời gian của animation là 1s
-    }
+  
+    
   }, [carouselRef]);
 
   const handleSlide = event => {
