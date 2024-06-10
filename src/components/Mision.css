@@ -22,7 +22,7 @@
 .mission .row .card .card-body ul {
         margin-left:5px;
     }
-.mission .row .card .card-order {
+.mission    .row .card .card-order {
         position: absolute;
         right: 10px;
         bottom: 10px;

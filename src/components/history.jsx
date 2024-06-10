@@ -62,7 +62,7 @@ const years = [
     }
   ];
 
-const History = () => {
+function History () {
     
     const [stickyTop, setStickyTop] = useState(0);
     const [scrollTarget, setScrollTarget] = useState(false);
