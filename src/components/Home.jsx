@@ -18,8 +18,8 @@ function Home() {
     <IntroAbout  /> 
     <TopNews />
     <AboutItem />
-    <MutiProduct />
-    <MutiTeam />
+    {/* <MutiProduct /> */}
+    {/* <MutiTeam /> */}
     </>
   );
 }

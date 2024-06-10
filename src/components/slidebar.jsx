@@ -36,12 +36,12 @@ const Slide=()=> {
               carouselRef.current.removeEventListener('slide.bs.carousel', handleSlide);
           };
       };
-    //   if (slideImage) {
-    //     slideImage.classList.add('animate__flipInX');
-    //     setTimeout(() => {
-    //         slideImage.classList.remove('animate__flipOutX');
-    //     }, 1000); // Thời gian của animation là 1s
-    // }
+      if (slideImage) {
+        slideImage.classList.add('animate__flipInX');
+        setTimeout(() => {
+            slideImage.classList.remove('animate__flipOutX');
+        }, 1000); // Thời gian của animation là 1s
+    }
   }, [carouselRef]);
 
   const handleSlide = event => {
@@ -49,9 +49,9 @@ const Slide=()=> {
       const contentx = currentSlide.querySelector('.contentx');
     
       if (contentx) {
-          contentx.classList.add('animate__backInUp');
+          contentx.classList.add('animate__fadeInDown');
           setTimeout(() => {
-              contentx.classList.remove('animate__backInDown');
+              contentx.classList.remove('animate__fadeInUp');
           }, 1000); // Thời gian của animation là 1s
       }
   };
@@ -89,13 +89,13 @@ const Slide=()=> {
   return (
     <>
     
-      <div id="carouselcustom" className="carousel  " ref={carouselRef}  data-bs-ride="carousel" data-bs-interval={3000}>
+      <div id="carouselcustom" className="carousel  " ref={carouselRef}  data-bs-ride="carousel" data-bs-interval={4000}>
         <div className="box1" >
         <div className="moving-box" ref={movingBoxRef}>
         {slide.map((item, index) => (
       <div
       key={index}
-      className={`contentx text-center animate__backInUp ${currentIndex === index ? 'd-block' : 'd-none'}`}
+      className={`contentx text-center animate__fadeInDown  ${currentIndex === index ? 'd-block' : 'd-none'}`}
     >
                 <div className="btn btn-sm border rounded-pill px-3 mb-3 animated">{item.title}</div>
                 <h1 className="display-4 mb-4 animated ">{item.h1}</h1>

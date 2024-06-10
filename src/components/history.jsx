@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Timeline.css'; // Import your CSS file here
-import Banner from './child/banner';
+import Banner from './child/banner.jsx';
 import a3 from "../image/banner3.jpg";
 
 import Card from "./child/SanPham.jsx";
@@ -62,7 +62,7 @@ const years = [
     }
   ];
 
-  function History()  {
+const History = () => {
     
     const [stickyTop, setStickyTop] = useState(0);
     const [scrollTarget, setScrollTarget] = useState(false);
@@ -74,7 +74,6 @@ const years = [
     useEffect(() => {
       // Calculate padding-bottom dynamically
      const milestoneheight = document.querySelector('.milestone').offsetHeight;
-      const wrapperHeight = document.querySelector('.wrapper').offsetHeight;
       const calculatedPadding = milestoneheight- 70
       setPaddingBottom(calculatedPadding);
 
@@ -83,39 +82,40 @@ const years = [
     useEffect(() => {
       const timeline = document.querySelector('.timeline__nav');
       const milestones = document.querySelectorAll('.timeline__section .milestone');
-      const offsetTop = parseInt(window.getComputedStyle(timeline).top, 40);
-  
+      const offsetTop = parseFloat(window.getComputedStyle(timeline).top);  
+      const bannerHeight = document.querySelector('.banner').offsetHeight;
       const handleResize = () => {
-        timeline.classList.remove('fixed');
+      
         setStickyTop(timeline.offsetTop - offsetTop);
         handleScroll();
       };
-  
       const handleScroll = () => {
         if (window.scrollY > stickyTop) {
-          timeline.classList.add('fixed');
+            timeline.classList.add('fixed');
         } else {
-          timeline.classList.remove('fixed');
+            timeline.classList.remove('fixed');
         }
-  
-        const viewLine = window.scrollY + window.innerHeight / 3    ;
+    
+        const viewLine = window.scrollY - 400;
+        console.log(window.scrollY);
+        console.log(viewLine);
+        console.log(bannerHeight  );
         let active = -1;
-  
+    
         if (scrollTarget === false) {
-          milestones.forEach((milestone, index) => {
-            if (milestone.offsetTop - viewLine > 0) {
-              return false;
-            }
-            active++;
-          });
+            milestones.forEach((milestone, index) => {
+                if (milestone.offsetTop - viewLine > 0) {
+                    return false;
+                }
+                active++;
+            });
         } else {
-          active = scrollTarget;
+            active = scrollTarget;
         }
-        
-        timeline.style.top = `${-1 * active * TIMELINE_VALUES.step + TIMELINE_VALUES.start}px`;
+    
+        timeline.style.top = `${active * TIMELINE_VALUES.step + TIMELINE_VALUES.start}px`;
         setActiveIndex(active !== -1 ? active : 0);
-      };
-  
+    };
   
   
       window.addEventListener('resize', handleResize);
@@ -133,8 +133,6 @@ const years = [
         <div> 
             <Banner img={a3} title="Giới thiệu" />
             <article className="timeline container">
-
-
             <div>
             <ul className="nav nav-tabs" id="myTab" role="tablist">
             <li className="nav-item" role="presentation">

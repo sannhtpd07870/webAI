@@ -1,82 +1,97 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import Contencard from '../item/contenCard'; // Make sure the path is correct
+import Banner from '../child/banner.jsx'; // Make sure the path is correct
 import "./hel.css"
+import HomeCard from '../mutiAbout/HomeCard.jsx';
+import ChildCadr from '../child/SanPham.jsx';
+import a1 from "../../image/K_HEALTHTECH/Picture1.jpg";
+import a2 from "../../image/K_HEALTHTECH/Picture2.png";
+import a3 from "../../image/K_HEALTHTECH/Picture3.jpg";
+import a4 from "../../image/K_HEALTHTECH/Picture4.jpg";
+import a5 from "../../image/K_HEALTHTECH/Picture5.jpg";
+import a6 from "../../image/K_HEALTHTECH/Picture6.jpg";
 
-import Chill_SanPham from "../child/SanPham.jsx";
-
-import a2 from "../../image/project-1.jpg"
-import a3 from "../../image/25.jpg"
-import ChungNhan from "../../image/ChungNhan.png"
-import Banner from "../child/banner.jsx"
-import Intro from "../child/intro.jsx"
-const K_HEALTHTECH =()=> {
+const K_HEALTHTECH = () => {
   const img = "https://fpt.com/-/media/project/fpt-corporation/fpt/common/fpt/our-business/technology/cong-nghe_home.jpg";
-  const containers = [
-    "Container 1",
-    "Container 2",
-    "Container 3",
-    "Container 4",
-    "Container 5",
+
+  const contents = [
+    {
+      name: "RIAVITA",
+      link: "https://www.riavita.com/",
+      title: "RIAVITA là công ty dược phẩm công nghệ cao chuyên về thảo dược được thành lập tại thủ đô Budapest...",
+      img: a1,
+      link: "https://www.riavita.com/vi/about-us"
+    },
+    {
+      name: "VITAMIN C+D+QUERCETIN",
+      title: "Quercetin: Là chất chống oxi hoá để hạ Gốc Tự Do - yếu tố gây lão hoá và bệnh tật cho cơ thể...",
+      img: a2,
+            link: "https://www.riavita.com/vi/about-us"
+    },
+    {
+      name: "WOMEN UP",
+      title: "WomenUp được bào chế từ các nguyên liệu thiên nhiên để cân bằng nội tisết tố nữ...",
+      img: a3,
+            link: "https://www.riavita.com/vi/about-us"
+    },
+    {
+      name: "MEN UP",
+      title: "Men Up là sản phẩm kế thừa 3 báu vật tự nhiên ở trên kết hợp thêm sâm đỏ hoàng kì vitamin và Kẽm...",
+      img: a4,
+            link: "https://www.riavita.com/vi/about-us"
+    },
+    {
+      name: "DETOX",
+      title: "Detox tổng hợp các thảo dược trên bổ sung thêm 8 loại vitamin tạo ra một công thức toàn diện...",
+      img: a5,
+            link: "https://www.riavita.com/vi/about-us"
+    },
+    {
+      name: "DETOX WHITE PREMIUM",
+      title: "Detox White Premium là tinh hoa của sự hòa quyện giữa thiên nhiên và khoa  học, là món quà của RIAVITA dành tặng riêng cho phái đẹp. Dựa trên công  thức thảo dược cao cấp, sản phẩm này thải độc một cách tự nhiên và hiệu  quả. Detox White Premium giúp thanh lọc từ gan, thận, phổi, ruột cho đến da  và mạch máu, đem đến cảm giác tươi mới và trẻ trung từ trong ra ngoài.",
+      img: a6,
+            link: "https://www.riavita.com/vi/about-us"
+    }
   ];
+console.log(contents);
   return (
-
-    <div>
-    
-      <Banner img={a3} title="K_HEALTHTECH" />
-
-      <div className="br  bg-color-2">
-        <div  className="container bg-color-2">
+    <>
+      <Banner img={img} title="K_HEALTHTECH" />
+      <div className="container">
+      <div className="br bg-color-2">
+        <div className=" bg-color-2">
           <div className="about-us">
             <div className="row">
-              <div className="block-our-business-title">
-                <h1 className="font-weight-light">K_HEALTHTECH</h1>
-                <span className="block-our-business-desc-title ">
-                Xây dựng
-                Hoạt động tư vấn thiết kế.
-                Hoạt động tư vấn quản lý xây dựng.
-                Thi công công trình.
-                <br />
-                2. Công nghệ thông tin
-                Tư vấn CNTT
-                Hạ tầng mạng
-                Thiết bị CNTT
-                <br />
-                3. Giải pháp thiết bị thông minh
-                Màn hình tích hợp thông minh UNV
-                Giải pháp chiếu sáng thông minh, smart home
-
+              <div className="block-our-business-title py-4">
+                <h2 className="font-weight-light">LĨNH VỰC HOẠT ĐỘNG</h2>
+                <span className="block-our-business-desc-title">
+                  1. Xây dựng, phát triển và thương mại hoá App dinh dưỡng cho bệnh nhân ung thư
+                  <br />
+                  2. Phát triển các nhãn hàng TPCN, TP dinh dưỡng
+                  <br />
+                  3. Xây dựng mô hình Phòng xét nghiệm công nghệ cao và phát triển chuỗi  
                 </span>
               </div>
             </div>
           </div>
         </div>
-      
-        <div className= "container" >
-          <div className="row mb-4">
-            <Intro img={img} title="TẦM NHÌN" subtitle=" 
-            Khát vọng trở thành thương hiệu mạnh, phát triển bền vững trong lĩnh vực xây dựng, công nghệ thông tin, các giải pháp thiết bị thông minh trên thị trường  Việt Nam và khu vực"
-              link="/blog/this-is-a-post-title"
-            />
-            <Intro img={img} title="SỨ MỆNH" subtitle="Khát vọng trở thành thương hiệu mạnh, phát triển bền vững trong lĩnh vực xây dựng, công nghệ thông tin, các giải pháp thiết bị thông minh trên thị trường  Việt Nam và khu vực."
-              link="/blog/this-is-a-post-title"
-            ></Intro>
-          </div>
-          <div className="row mb-4">
-            <Intro img={img} title="TRIẾT LÝ KINH DOANH" subtitle="    Lấy chữ Tín, sự hài lòng của Khách hàng làm thang đo để phát triển, khẳng định vị thế của chúng tôi.
-."
-              link="/blog/this-is-a-post-title"
-            />
-            <Intro img={ChungNhan} title="CHỨNG NHẬN" subtitle=""
-              link="/blog/this-is-a-post-title"
-            ></Intro>
-          </div>
+      </div>
+      </div>
+      <div className=" k-hel py-5">
+          {contents.map((item, index) => (
+                 <Contencard 
+                 key={index} 
+                 index={index}
+                 name={item.name}
+                 title={item.title} 
+                 link={item.link} 
+                 img={item.img} 
+               />
+          ))}
         </div>
-      </div>
 
-      <div className="br bg-color-1">
-
-            </div>
-      </div>
+      
+    </>
   );
 }
 

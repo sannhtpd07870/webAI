@@ -4,7 +4,7 @@ function MutiTeam() {
     return(
 <>
   {/* Team Start */}
-  <div className="container-fluid bg-light py-5">
+  {/* <div className="container-fluid bg-light py-5"> */}
     {/* <div className="container py-5">
       <div className="row g-5 align-items-center">
         <div className="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
@@ -30,7 +30,7 @@ function MutiTeam() {
                   <div className="team-item bg-white text-center rounded p-4 pt-0">
                     <img
                       className="img-fluid rounded-circle p-4"
-                      src="../../..//image/team-1.jpg"
+                      src="../../image/team-1.jpg"
                       alt=""
                     />
                     <h5 className="mb-0">Boris Johnson</h5>
@@ -84,7 +84,7 @@ function MutiTeam() {
                   <div className="team-item bg-white text-center rounded p-4 pt-0">
                     <img
                       className="img-fluid rounded-circle p-4"
-                      src="../../../public/image/team-3.jpg"
+                      src="../../image/team-3.jpg"
                       alt=""
                     />
                     <h5 className="mb-0">Kate Winslet</h5>
@@ -109,7 +109,7 @@ function MutiTeam() {
                   <div className="team-item bg-white text-center rounded p-4 pt-0">
                     <img
                       className="img-fluid rounded-circle p-4"
-                      src="../../../public/image/team-4.jpg"
+                      src="../../image/team-4.jpg"
                       alt=""
                     />
                     <h5 className="mb-0">Cody Gardner</h5>
@@ -136,8 +136,8 @@ function MutiTeam() {
         </div>
       </div>
     </div> */}
-  </div>
-  {/* Team End */}
+  {/* </div>  {/* Team End */}
+ 
 </>
     );
 }

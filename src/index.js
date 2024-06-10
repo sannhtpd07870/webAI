@@ -14,15 +14,15 @@ import {
   Footer,
   Home,
   About,
-  Contact,
-  Tatca,
   K_SOLUTION,
   K_TECHNICAL,
   K_HEALTHTECH,
   Slide,
   News,
   Partn,
-  History
+  History,
+  Corevalues,
+  Mission
 
 } from "./components";
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -30,14 +30,15 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <Navigation />
   <Routes>
     <Route path="/" element={<Home />} />
-     <Route path="/About" element={<History />} />
-    <Route path="/contact" element={<Contact />} />
+    <Route path="/Lichsu" element={<History />} />
+    <Route path="/Sumenh" element={<Mission />} />
+     <Route path="/GiaTri" element={<Corevalues />} />
     <Route path="/DoiTac" element={<Partn/>} />
     <Route path="/News" element={<News/>} />
-    <Route path="/SanPham" element={<Tatca/>} />
-    <Route path="/SanPham/Solution" element={<K_SOLUTION />}/>
-    <Route path="/SanPham/Healthtech" element={<K_HEALTHTECH />} />
-    <Route path="/SanPham/Technical" element={<K_TECHNICAL />}/>
+
+    <Route path="/SanPham/solution" element={<K_SOLUTION />}/>
+    <Route path="/SanPham/healthtech" element={<K_HEALTHTECH />} />
+    <Route path="/SanPham/technical" element={<K_TECHNICAL />}/>
     {/* <Route path="/Admin" element={<Admin />} /> */}
   </Routes>
   <Footer className="footer"/>

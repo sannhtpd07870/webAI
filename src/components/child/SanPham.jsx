@@ -8,7 +8,7 @@ const Chill_SanPham =(SanPham)=> {
   return (
     <div className="home">
       <div className="container">
-        <Link to="/blog/this-is-a-post-title">
+     
           <div className="row align-items-center">
             <div className="col-lg-6">
               <img
@@ -24,7 +24,6 @@ const Chill_SanPham =(SanPham)=> {
               </p>
             </div>
           </div>
-        </Link>
       </div>
       </div>
   )}

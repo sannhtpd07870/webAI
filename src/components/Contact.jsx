@@ -1,39 +1,40 @@
-// import React from "react";
+// // import React from "react";
 
-import React, { useState, useEffect } from 'react';
+// import React, { useState, useEffect } from 'react';
 
 
- function Contact() {
+// function Contact() {
 
 //     const [data, getdata ] = useState();
 //     useEffect(() => {
 //         userdata();
 //     }, []);
         
- return (
+//  return (
 
-<div className="contact">
-    <div className="container">
-        <div className="row align-items-center my-5">
-        <table>
-  <tr>
-    <th>name</th>
-    <th>password</th>
-    <th>id</th>
-    <th>edit</th>
-  </tr>
-    {/* { data && data.map((user) => (   
-      <tr key={user.id}>
-        <td>{user.name}</td>        
-        <td>{user.password}</td>
-        <td>{user.id}</td>
-        <td><button onClick={delele(user.id)}>delete</button></td>
-  </tr>))} */}
-</table>
-    </div>
-</div>
-</div>      
- );
+// <div className="contact">
+//     <div className="container">
+//         <div className="row align-items-center my-5">
+            
+//         <table>
+//   <tr>
+//     <th>name</th>
+//     <th>password</th>
+//     <th>id</th>
+//     <th>edit</th>
+//   </tr>
+//     { data && data.map((user) => (   
+//       <tr key={user.id}>
+//         <td>{user.name}</td>        
+//         <td>{user.password}</td>
+//         <td>{user.id}</td>
+//         <td><button onClick={delele(user.id)}>delete</button></td>
+//   </tr>))}
+// </table>
+//     </div>
+// </div>
+// </div>      
+//  );
 
 //  async function userdata() {
 //     const response = await fetch('https://65b87570b71048505a88a94e.mockapi.io/est');
@@ -54,9 +55,10 @@ import React, { useState, useEffect } from 'react';
 // }
 //     }
 
-//}
-}
+// }
+// }
 
 
 
-export default Contact;
+
+// export default Contact;

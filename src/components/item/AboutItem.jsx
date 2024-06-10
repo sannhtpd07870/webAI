@@ -1,5 +1,7 @@
 import React from "react";
 import "./style/aboutitem.css"
+import a1 from "../../image/doitackachhang.jpg"
+import phattrienImg from "../../image/phattrien.png"
 function AboutItem() {
     return(
   <div>
@@ -7,9 +9,7 @@ function AboutItem() {
       <div className="bg-2 bg-centre"></div>
       <div className="container">
         <div className="row g-5 ">
-    
           <div className="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-    
             <h1 className="mb-4">
             Phát triển bền vững
             </h1>
@@ -20,21 +20,21 @@ function AboutItem() {
               <div className="col-sm-6">
                 <h6 className="mb-3">
                   <i className="fa fa-check text-primary me-2" />
-                  Award Winning
+                  Tăng trưởng mạnh mẽ
                 </h6>
                 <h6 className="mb-0">
                   <i className="fa fa-check text-primary me-2" />
-                  Professional Staff
+                Chất lượng dịch vụ cao
                 </h6>
               </div>
               <div className="col-sm-6">
                 <h6 className="mb-3">
                   <i className="fa fa-check text-primary me-2" />
-                  24/7 Support
+                  Chuyên nghiệp
                 </h6>
                 <h6 className="mb-0">
                   <i className="fa fa-check text-primary me-2" />
-                  Fair Prices
+                  Tiên Phong
                 </h6>
               </div>
             </div>
@@ -54,7 +54,7 @@ function AboutItem() {
     
       <div className="row parallelogram ">
         <div className="back auto"></div>
-        <img className=" " src="../../image/about-img.jpg" alt="" /></div>
+        <img className=" " src={phattrienImg} alt="" /></div>
     </div>
         </div>
       </div>
@@ -64,13 +64,13 @@ function AboutItem() {
     
               <div className="row parallelogram ">
                 <div className="back auto  jalign-self-start"></div>
-                <img className="auto align-self-end" src="../../image/about-img.jpg" alt="" /></div>
+                <img className="auto align-self-end" src={a1} alt="" /></div>
             </div>
     
           <div className="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
     
             <h1 className="mb-4">
-            ĐỐI TÁC - kHÁCH HÀNG
+            ĐỐI TÁC - KHÁCH HÀNG
             </h1>
             <p className="mb-4">
             Công ty KCL là doanh nghiệp khoa học và công nghệ chuyên cung cấp các giải pháp, sản phẩm, dịch vụ công nghệ thông tin

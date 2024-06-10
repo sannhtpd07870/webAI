@@ -1,7 +1,11 @@
+
+:root{
+    --height-item:450px
+}
 .strategic-item-wrap {
     background: #fae6d2;
-    height: 540px;
-    max-width: 460px !important;
+    height: var(--height-item);
+    max-width: 360px !important;
     border-radius: 90px 0;
 }
 
@@ -13,7 +17,7 @@
     position: relative;
     right: 20px;
     bottom: 20px;
-    height: 530px;
+    height: 440px;
     display: flex;
     flex-direction: column;
     padding: 50px 40px;
@@ -21,11 +25,11 @@
 }
 
 .strategic-item-content p {
-    font-size: 17px !important;
+    font-size: 14px !important;
     font-weight: 500;
     line-height: 22px;
     letter-spacing: 0;
-    height: 280px;
+    height: 240px;
     overflow-y: auto;
 }
 

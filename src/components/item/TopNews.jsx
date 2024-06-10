@@ -1,7 +1,11 @@
 import React from "react";
 import "./style/Topnew.css";
+import a1 from "../../image/project-1.jpg"
+import a2 from "../../image/project-2.jpg"
+import a3 from "../../image/project-3.jpg"  
 
 function TopNews() {
+ 
     return (
         <>
         <div className="container-fluid bg-light ">
@@ -23,7 +27,7 @@ function TopNews() {
             <div className="row g-4">
               <div className="col-lg-4 wow fadeIn" data-wow-delay="0.3s">
                 <div className="case-item position-relative overflow-hidden rounded mb-2">
-                  <img className="img-fluid" src="../../image/project-1.jpg" alt="" />
+                  <img className="img-fluid" src={a1} alt="" />
                   <a className="case-overlay " href="">
                     <small>Biến Động Công nghệ</small>
                     <h5 className="lh-base mb-3">
@@ -35,7 +39,7 @@ function TopNews() {
 
               <div className="col-lg-4 wow fadeIn" data-wow-delay="0.5s">
                 <div className="case-item position-relative overflow-hidden rounded mb-2">
-                  <img className="img-fluid" src="../../image/project-2.jpg" alt="" />
+                  <img className="img-fluid" src={a2} alt="" />
                   <a className="case-overlay " href="">
                     <small>Machine learning</small>
                     <h5 className="lh-base  mb-3">
@@ -48,7 +52,7 @@ function TopNews() {
             
               <div className="col-lg-4 wow fadeIn" data-wow-delay="0.7s">
                 <div className="case-item position-relative overflow-hidden rounded mb-2">
-                  <img className="img-fluid" src="../../image/project-3.jpg" alt="" />
+                  <img className="img-fluid" src={a3} alt="" />
                   <a className="case-overlay " href="">
                     <small>Predictive Analysis</small>
                     <h5 className="lh-base  mb-3">

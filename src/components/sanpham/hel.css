@@ -1,13 +1,5 @@
 
 
-.bg-color-1 {
-    background-color: #f3f3f3;
-  }
-  
-  .bg-color-2 {
-    background-color: #ffffff;
-  }
-  
 .about-us{
     margin-bottom: 30px;
     display: flex;
@@ -22,7 +14,6 @@
     font-size: 28px;
     letter-spacing: -.02em;
     text-align: left;
-    color: #006709;
 }
 
 .about-us .block-our-business-desc-title {
@@ -34,4 +25,9 @@
     float: left;
     margin-top: 10px;
     color: #0e1830;
+}
+
+.k-hel img{
+  max-width: 600px;
+  max-height: 400px;
 }

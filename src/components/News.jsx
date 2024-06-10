@@ -7,6 +7,7 @@ import Banner from "./child/banner";
 import a3 from "../image/banner3.jpg";
 import "./New.css"
 
+
 function News() {
   const settings = {
     dots: true,
@@ -64,7 +65,6 @@ function News() {
             <Slider {...settings}>
             {posts.map(post => (
               <div>
-                
                 <CustomCard
                   key={post.postId}
                   img={post.img}
