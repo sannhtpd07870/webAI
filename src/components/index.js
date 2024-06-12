@@ -5,7 +5,7 @@ export { default as About } from "./About";
 // export { default as Contact } from "./Contact";
 export { default as News } from "./News";
 export { default as Corevalues } from "./corevalues";
-export { default as History } from "./history";
+export { default as History } from "./History";
 export { default as Partn } from "./PartnerHome";
 export { default as Mission } from "./mission";
 export { default as K_SOLUTION } from "./sanpham/K_SOLUTION";

@@ -10,7 +10,7 @@ function corevalues() {
         <Banner img={bannerimg} title="Giá trị cốt lõi" />
           <div className="corevalues">
             <div className="header bg-2">
-              <h1>GIÁ TRỊ CỐT LÕI CỦA CHÚNG TÔI </h1>
+              <h2>GIÁ TRỊ CỐT LÕI CỦA CHÚNG TÔI </h2>
               <p>NHÂN, LỄ, NGHĨA, TRÍ, TÍN là nền tảng để hình thành và phát triển của KCL, tạo nên sức mạnh và tinh thần thúc đẩy toàn thể nhân viên không ngừng nỗ lực, sáng tạo vì lợi ích chung của khách hàng, đối tác và cộng đồng.</p>
             </div>
             <div className="row1-container">

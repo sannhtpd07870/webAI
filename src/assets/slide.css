@@ -5,12 +5,16 @@
 }
 .box1{
     position: absolute;
+    
     top: 10%;
-    left: 53%;
+    left: 55%;
     background-color: #ffffff;
-    width: 35%;
-    height: 80%;
+    width: 32%;
+    height: 78%;
     z-index: 1;
+    opacity: 0.9;
+    display: flex;
+    justify-content: center;
 }
 .moving-box {
     position: absolute;
@@ -27,6 +31,7 @@
 
 
 .contentx {
+    padding: 45px;
     position: relative;
     z-index: 1;
 }
@@ -80,8 +85,10 @@
     position: relative;
     top: 0%;
     left: 10%;
+    object-fit: cover;
     width: 1040px;
     height: 504px;
+ 
  
 }
 
@@ -170,6 +177,54 @@
   
     to {
       transform: perspective(400px) rotateX(0deg);
+      opacity: 1;
+    }
+  }
+  
+  /* Hiệu ứng flip ra */
+  @keyframes flipOutX {
+    from {
+      transform: perspective(400px) rotateX(0deg);
+      opacity: 1;
+    }
+  
+    to {
+      transform: perspective(400px) rotateX(90deg);
+      opacity: 0;
+    }
+  }
+  
+  /* Áp dụng hiệu ứng flip vào phần tử slide-image */
+  .slide-image.animate__flipInX {
+    animation: flipInX 1s ease;
+  }
+  
+  /* Áp dụng hiệu ứng flip ra phần tử slide-image */
+  .slide-image.animate__flipOutX {
+    animation: flipOutX 1s ease;
+  }
+
+  
+.animate__backInUp {
+    animation: backInUp 1s ease;
+}
+
+.animate__fadeInUp{
+    animation: 1s ease;
+}
+.animate__fadeInDown{
+    animation: 1s ease;
+}
+
+/* Hiệu ứng flip vào */
+@keyframes flipInX {
+    from {
+      transform: perspective(40px) rotateX(90deg);
+      opacity: 0;
+    }
+  
+    to {
+      transform: perspective(40px) rotateX(0deg);
       opacity: 1;
     }
   }

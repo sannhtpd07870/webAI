@@ -6,7 +6,7 @@ const banner = (banner) =>{
         <div className="banner">
            <img src={banner.img} alt="" />
            <div className="banner-title col-sm-12 col-md-12 col-lg-7">
-           <span>{banner.title}</span>
+           <h1>{banner.title}</h1>
            </div>
        </div>
 )

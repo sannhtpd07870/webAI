@@ -2,26 +2,25 @@ import Carousel from 'react-bootstrap/Carousel';
 import React, { useEffect,useRef,useState   } from 'react';
 import "../assets/slide.css"
 import 'animate.css'; 
-
+import img from "../image/slide1.jpg"
+import img2 from "../image/slide2.jpg"
 
 const Slide=()=> {
-  const img = 'https://fpt.com/-/media/project/fpt-corporation/fpt/news/2024/04/mou-fpt-nvidia.jpg'
-  const img2 ="https://fpt.com/-/media/project/fpt-corporation/fpt/news/2024/05/top-50-gartner_01.png"
   const slide = [
       {
         img: img,
         title: "KCL",
         h1: "KCL Group",
-        p: "thông tin Công ty",
-        link: "https://www.fpt.com/vi/",
+        p: "KÝ KẾT HỢP TÁC CHIẾN LƯỢC KCL GROUP CÙNG RIAVITA PHARMA HUNGGARY",
+        link: "/Lichsu",
      
       },
       {
         img: img2,
         title: "KCL",
         h1: "KCL Group",
-        p: "Thông tin mới nhất",
-        link: "https://www.fpt.com/vi/",
+        p: "LỄ KỈ NIỆM 4 NĂM THÀNH LẬP CÔNG TY KCL GROUP",
+        link: "#",
         footer: "KCL"
       }
     ];
@@ -146,7 +145,7 @@ const Slide=()=> {
       className={`contentx animate__backInUp ${currentIndex === index ? 'd-block' : 'd-none'}`}
     >
                 <div className="btn btn-sm border  animated">{item.title}</div>
-                <h1 className="display-4  animated ">{item.h1}</h1>
+                <h2 className="display-4  animated ">{item.h1}</h2>
                 <p className="mb-4 animated">{item.p}</p>
                 <a href={item.link} className="btn btn-orange animated ">Xem Thêm</a>
               </div>

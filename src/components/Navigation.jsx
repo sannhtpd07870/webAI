@@ -15,7 +15,7 @@ const Navigation =(menu)=> {
         <nav className="navbar navbar-expand-lg navbar p-0">   
                 <div  className="navbar-brand">
                     <a href="/">
-                        <h1 className><img src={Logo} alt="" /></h1>
+                        <img src={Logo} alt="" />
                     </a>
                 </div>
                <button type="button" className="navbar-toggler ms-auto me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">

@@ -14,7 +14,7 @@ function MutiCase() {
               <div className="btn btn-sm border rounded-pill text-primary px-3 mb-3">
                 
               </div>
-              <h1 className="mb-4">TIN TỨC CÔNG NGHỆ</h1>
+              <h2 className="mb-4">TIN TỨC CÔNG NGHỆ</h2>
             </div>
             <div className="row g-4">
               <div className="col-lg-4 wow fadeIn" data-wow-delay="0.3s">

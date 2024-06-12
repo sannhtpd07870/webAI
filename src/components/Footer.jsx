@@ -12,23 +12,14 @@ function Footer() {
         </div>
 
         <div>
-          <a href='' className='me-4 text-reset'>
-            <MDBIcon color='secondary' fab icon='facebook-f' />
+          <a href='https://www.facebook.com/kclhealthcare?mibextid=ZbWKwL' className='me-4 text-reset'>
+            <MDBIcon fab icon='facebook-f' />
           </a>
           <a href='' className='me-4 text-reset'>
-            <MDBIcon color='secondary' fab icon='twitter' />
+            <MDBIcon fab icon='google' />
           </a>
           <a href='' className='me-4 text-reset'>
-            <MDBIcon color='secondary' fab icon='google' />
-          </a>
-          <a href='' className='me-4 text-reset'>
-            <MDBIcon color='secondary' fab icon='instagram' />
-          </a>
-          <a href='' className='me-4 text-reset'>
-            <MDBIcon color='secondary' fab icon='linkedin' />
-          </a>
-          <a href='' className='me-4 text-reset'>
-            <MDBIcon color='secondary' fab icon='github' />
+            <MDBIcon fab icon='instagram' />
           </a>
         </div>
       </section>

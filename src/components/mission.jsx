@@ -1,6 +1,8 @@
 import "./Mision.css"
 
 import Contencard from './item/contenCard';
+import Banner from "./child/banner";
+import ImgBanner from "../image/banner/mission-vision-banner.avif"
 const congdong ="https://tino.org/wp-content/uploads/2023/01/word-image-6883-2.png"
 
 const  trachnhiem = [
@@ -86,6 +88,7 @@ const content = [
 const mision=()=>{
     return(
 <>
+<Banner img = {ImgBanner} title ="SỨ MỆNH"/>
 <div>
             <ul className="nav nav-tabs" id="myTab" role="tablist">
             <li className="nav-item" role="presentation">

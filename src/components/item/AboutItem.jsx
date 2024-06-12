@@ -10,9 +10,9 @@ function AboutItem() {
       <div className="container">
         <div className="row g-5 ">
           <div className="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-            <h1 className="mb-4">
+            <h2 className="mb-4">
             Phát triển bền vững
-            </h1>
+            </h2>
             <p className="mb-4">
             Công ty KCL là doanh nghiệp khoa học và công nghệ.
             </p>
@@ -69,9 +69,9 @@ function AboutItem() {
     
           <div className="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
     
-            <h1 className="mb-4">
+            <h2 className="mb-4">
             ĐỐI TÁC - KHÁCH HÀNG
-            </h1>
+            </h2>
             <p className="mb-4">
             Công ty KCL là doanh nghiệp khoa học và công nghệ chuyên cung cấp các giải pháp, sản phẩm, dịch vụ công nghệ thông tin
             </p>

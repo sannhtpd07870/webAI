@@ -13,3 +13,29 @@
  
     
 }
+
+
+.social-icon .fa-facebook-f:before :hover {
+    color: #3b5998; /* Facebook */
+  }
+  
+  .social-icon:hover .fa-twitter {
+    color: #55acee; /* Twitter */
+  }
+  
+  .social-icon:hover .fa-google {
+    color: #dd4b39; /* Google */
+  }
+  
+  .social-icon:hover .fa-instagram {
+    color: #ac2bac; /* Instagram */
+  }
+  
+  .social-icon:hover .fa-linkedin {
+    color: #0077b5; /* LinkedIn */
+  }
+  
+  .social-icon:hover .fa-github {
+    color: #333; /* GitHub */
+  }
+  

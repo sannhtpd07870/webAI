@@ -18,7 +18,7 @@ const Chill_SanPham =(SanPham)=> {
               />
             </div>
             <div className="col-lg-6">
-              <h1 className="font-weight-light">{SanPham.title}</h1>
+              <h2 className="font-weight-light">{SanPham.title}</h2>
               <p>
                 {SanPham.subtitle}
               </p>
