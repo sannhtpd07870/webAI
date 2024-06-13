@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 import './Timeline.css'; // Import your CSS file here
 import Banner from './child/banner.jsx';
 import a3 from "../image/banner3.jpg";
-
 import Card from "./child/SanPham.jsx";
+
 const TIMELINE_VALUES = {
   start: 190,
   step: 30
@@ -62,7 +62,7 @@ const years = [
     }
   ];
 
-function History () {
+function history () {
     
     const [stickyTop, setStickyTop] = useState(0);
     const [scrollTarget, setScrollTarget] = useState(false);
@@ -89,7 +89,7 @@ function History () {
         setStickyTop(timeline.offsetTop - offsetTop);
         handleScroll();
       };
-      const handleScroll = () => {
+        const handleScroll = () => {
         if (window.scrollY > stickyTop) {
             timeline.classList.add('fixed');
         } else {
@@ -187,4 +187,4 @@ function History () {
     );
   };
   
-export default History;
+export default history;
