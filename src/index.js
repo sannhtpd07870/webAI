@@ -34,9 +34,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Route path="/DoiTac" element={<Partn/>} />
     <Route path="/News" element={<News/>} />
 
-    <Route path="/SanPham/solution" element={<K_SOLUTION />}/>
-    <Route path="/SanPham/healthtech" element={<K_HEALTHTECH />} />
-    <Route path="/SanPham/technical" element={<K_TECHNICAL />}/>
+    <Route path="/SanPham/Solution" element={<K_SOLUTION />}/>
+    <Route path="/SanPham/Healthtech" element={<K_HEALTHTECH />} />
+    <Route path="/SanPham/Technical" element={<K_TECHNICAL />}/>
     {/* <Route path="/Admin" element={<Admin />} /> */}
   </Routes>
   <Footer className="footer"/>
