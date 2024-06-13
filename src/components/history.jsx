@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import './Timeline.css'; // Import your CSS file here
+import './Timeline.css'; 
 import Banner from './child/banner.jsx';
 import a3 from "../image/banner3.jpg";
 import Card from "./child/SanPham.jsx";
@@ -62,7 +62,7 @@ const years = [
     }
   ];
 
-function history () {
+function History () {
     
     const [stickyTop, setStickyTop] = useState(0);
     const [scrollTarget, setScrollTarget] = useState(false);
@@ -187,4 +187,4 @@ function history () {
     );
   };
   
-export default history;
+export default History;
