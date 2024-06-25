@@ -11,15 +11,12 @@ import Typography from '@mui/material/Typography';
 import { useRouter } from 'next/router';
 import { Menu, MenuItem } from '@mui/material';
 import { signOut, useSession } from 'next-auth/react';
-
 function AdminHeader({ onDrawerToggle }) {
   const router = useRouter();
   const session = useSession();
-
   const onChangeTab = useCallback((url) => {
     router.push(url).then();
   }, [router]);
-
   return (
     <React.Fragment>
       <AppBar color="primary" position="sticky" elevation={0}>
@@ -87,7 +84,6 @@ function AdminHeader({ onDrawerToggle }) {
     </React.Fragment>
   );
 }
-
 function UserMenu() {
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
@@ -98,11 +94,9 @@ function UserMenu() {
     setAnchorEl(null);
     signOut().then();
   };
-
   const handleClose = () => {
     setAnchorEl(null);
   };
-
   return (
     <>
       <IconButton
@@ -136,14 +130,11 @@ function UserMenu() {
     </>
   );
 }
-
 export default AdminHeader;
-
 function getHeaderTitle(pathname) {
   // Define your logic to get the header title based on the pathname
   return "Header Title"; // Example static return value
 }
-
 function getHeaderBasePath(pathname) {
   // Define your logic to get the base path for header tabs based on the pathname
   return "/base-path"; // Example static return value

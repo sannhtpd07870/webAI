@@ -3,6 +3,9 @@ import "./Mision.css"
 import Contencard from './item/contenCard';
 import Banner from "./child/banner";
 import ImgBanner from "../image/banner/mission-vision-banner.avif"
+import {
+  HelmetHead
+  } from "../components";
 const congdong ="https://tino.org/wp-content/uploads/2023/01/word-image-6883-2.png"
 
 const  trachnhiem = [
@@ -88,6 +91,7 @@ const content = [
 const mision=()=>{
     return(
 <>
+<HelmetHead name="SỨ MỆNH" title="SỨ MỆNH CỦA KCL GROUP" description="SỨ MỆNH"  img={ImgBanner} />
 <Banner img = {ImgBanner} title ="SỨ MỆNH"/>
 <div>
             <ul className="nav nav-tabs" id="myTab" role="tablist">
@@ -116,7 +120,6 @@ const mision=()=>{
                 img={item.img}
                 />
                 ))}
-            
             </div>
            
             </div>

@@ -1,16 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-
-
-
 const Chill_SanPham =(SanPham)=> {
   return (
     <div className="home">
       <div className="container">
      
           <div className="row align-items-center">
-            <div className="col-lg-6">
+            <div className="col-lg-6 img-bg">
               <img
                 className="img-fluid rounded mb-4 mb-lg-0"
                 src={SanPham.img}
@@ -27,8 +24,5 @@ const Chill_SanPham =(SanPham)=> {
       </div>
       </div>
   )}
-
-
-
 
 export default Chill_SanPham;

@@ -1,8 +1,9 @@
 export { default as Navigation } from "./Navigation";
 export { default as Footer } from "./Footer";
+export { default as HelmetHead } from "./HelmetHead";
 export { default as Home } from "./Home";
 export { default as About } from "./About";
-// export { default as Contact } from "./Contact";
+ export { default as Profession } from "./profession ";
 export { default as News } from "./News";
 export { default as Corevalues } from "./corevalues";
 export { default as History } from "./history";

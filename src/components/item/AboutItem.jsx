@@ -39,13 +39,13 @@ function AboutItem() {
               </div>
             </div>
             <div className="d-flex align-items-center mt-4">
-              <a className="btn btn-orange rounded-pill px-4 me-3" href="">
+              <a className="btn btn-orange rounded-pill px-4 me-3" href="https://www.facebook.com/profile.php?id=61552475791823">
                 Tìm Hiểu Thêm
               </a>
-              <a className="btn btn-outline-primary btn-square me-3" href="">
+              <a className="btn btn-outline-primary btn-square me-3" href="https://www.facebook.com/profile.php?id=61552475791823">
                 <i className="fab fa-facebook-f" />
               </a>
-              <a className="btn btn-outline-primary btn-square me-3" href="">
+              <a className="btn btn-outline-primary btn-square me-3" href=""> 
                 <i className=" fa-regular fa-envelope"></i>
               </a>
             </div>
@@ -89,10 +89,10 @@ function AboutItem() {
     
             </div>
             <div className="d-flex align-items-center mt-4">
-              <a className="btn btn-orange rounded-pill px-4 me-3" href="">
+              <a className="btn btn-orange rounded-pill px-4 me-3" href="/DoiTac">
                 Tìm Hiểu Thêm
               </a>
-              <a className="btn btn-outline-primary btn-square me-3" href="">
+              <a className="btn btn-outline-primary btn-square me-3" href="https://www.facebook.com/profile.php?id=61552475791823">
                 <i className="fab fa-facebook-f" />
               </a>
               <a className="btn btn-outline-primary btn-square me-3" href="">

@@ -1,9 +1,15 @@
-import React, { useEffect, useState } from 'react';
+  import React, { useEffect, useState } from 'react';
 import './Timeline.css'; 
 import Banner from './child/banner.jsx';
 import a3 from "../image/banner3.jpg";
 import Card from "./child/SanPham.jsx";
-
+import Appimg from "../image/app.png";
+import Kios from "../image/kiosk.png";
+import YHCT from "../image/YHCT.jpg";
+import solution from "../image/K-solutionIMG.png"
+import {
+  HelmetHead
+  } from "../components";
 const TIMELINE_VALUES = {
   start: 190,
   step: 30
@@ -12,31 +18,31 @@ const TIMELINE_VALUES = {
 const years = [
     {
       year: 2020,
-      Image: 'https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg',
+      Image: Appimg,
       events: [
         {
           title: 'PHÁT TRIỂN VÀ ỨNG DỤNG APP QUẢN LÝ XN CỘNG ĐỒNG'  ,
-          subtitle: 'Công ty TNHH MTV CÔNG NGHỆ CỔ PHẦN XÂY DỰNG CÔNG NGHỆ THÔNG TIN CÔNG TY CỔ PHẦN XÂY DỰNG CÔNG NGHỆ THÔNG TIN CÔNG TY CỔ PHẦN XÂY DỰNG CÔNG '
+          subtitle: 'SẢN PHẨM CỦA CÔNG TY KCL GROUP'
         }
       ]
     },
     {
       year: 2021,
-      Image: 'https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg',
+      Image: YHCT,
       events: [
         {
-          title: 'PHÁT TRIỂN VÀ ỨNG DỤNG APP QUẢN LÝ XN CỘNG ĐỒNG'  ,
-          subtitle: 'Công ty TNHH MTV CÔNG NGHỆ CỔ PHẦN XÂY DỰNG CÔNG NGHỆ THÔNG TIN CÔNG TY CỔ PHẦN XÂY DỰNG CÔNG NGHỆ THÔNG TIN CÔNG TY CỔ PHẦN XÂY DỰNG CÔNG '
+          title: 'TRIỂN KHAI DỰ ÁN CNTT BV YHCT'  ,
+          subtitle: 'SẢN PHẨM CỦA CÔNG TY KCL GROUP'
         }
       ]
     },
     {
       year: 2022,
-      Image: 'https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg',
+      Image: Kios,
       events: [
         {
-          title: 'PHÁT TRIỂN VÀ ỨNG DỤNG APP QUẢN LÝ XN CỘNG ĐỒNG',
-          subtitle: 'Công ty TNHH MTV CÔNG NGHỆ CỔ PHẦN XÂY DỰNG CÔNG NGHỆ THÔNG TIN CÔNG TY CỔ PHẦN XÂY DỰNG CÔNG NGHỆ THÔNG TIN CÔNG TY CỔ PHẦN XÂY DỰNG CÔNG'
+          title: 'THƯƠNG MẠI HÓA SẢN PHẨM KIOSK PHÒNG KHÁM',
+          subtitle: 'SẢN PHẨM CỦA CÔNG TY KCL GROUP'
         }
       ]
     },
@@ -45,17 +51,17 @@ const years = [
       Image: 'https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg',
       events: [
         {
-          title: 'PHÁT TRIỂN VÀ ỨNG DỤNG APP QUẢN LÝ XN CỘNG ĐỒNG',
+          title: 'TRIỂN KHAI DỰ ÁN BV SẢN NHI . THƯƠNG MẠI HÓA PM KCB THÔNG MINH K.CLINIC ',
           subtitle: 'Công ty TNHH MTV CÔNG NGHỆ CỔ PHẦN XÂY DỰNG CÔNG NGHỆ THÔNG TIN CÔNG TY CỔ PHẦN XÂY DỰNG CÔNG NGHỆ THÔNG TIN CÔNG TY CỔ PHẦN XÂY DỰNG CÔNG'
         }
       ]
     },
     {
       year: 2024,
-      Image: 'https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg',
+      Image: solution,
       events: [
         {
-          title: 'PHÁT TRIỂN VÀ ỨNG DỤNG APP QUẢN LÝ XN CỘNG ĐỒNG',
+          title: 'PHÁT TRIỂN NHÓM NGÀNH HEALTHCARE/HEALTHTECH',
           subtitle: 'Công ty TNHH MTV CÔNG NGHỆ CỔ PHẦN XÂY DỰNG CÔNG NGHỆ THÔNG TIN CÔNG TY CỔ PHẦN XÂY DỰNG CÔNG NGHỆ THÔNG TIN CÔNG TY CỔ PHẦN XÂY DỰNG CÔNG'
         }
       ]
@@ -131,6 +137,7 @@ function History () {
   
     return (
         <div> 
+           <HelmetHead name="LỊCH SỬ" title="Giới Thiệu Lịch Sử KCL GROUP" description="History"  img={a3} />
             <Banner img={a3} title="Giới thiệu" />
             <article className="timeline container">
             <div>

@@ -12,7 +12,7 @@ const Contencard = ({ index, name, title, img, link }) => {
           </div>
           <div className="col-lg-6">
             <img
-              className="img-fluid rounded mb-4 mb-lg-0"
+              className="img-thumbnail rounded mb-4 mb-lg-0  "
               src={img}
               alt=""
             />

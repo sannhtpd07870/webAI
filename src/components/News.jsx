@@ -6,7 +6,9 @@ import CustomCard from "./mutiAbout/Customcard";
 import Banner from "./child/banner";
 import a3 from "../image/banner3.jpg";
 import "./New.css"
-
+import {
+  HelmetHead
+  } from "../components";
 
 function News() {
   const settings = {
@@ -59,6 +61,7 @@ function News() {
 }
   return (
     <>
+ <HelmetHead name="Tin Tức" title="Tin Tức Về KCL" description="Tin tức"  img={a3} />
       <Banner img={a3} title="News" />
       <div className="container ">
           <div className="slider-container">

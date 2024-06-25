@@ -4,15 +4,17 @@ import Banner from '../child/banner.jsx'; // Make sure the path is correct
 import "./hel.css"
 import HomeCard from '../mutiAbout/HomeCard.jsx';
 import ChildCadr from '../child/SanPham.jsx';
+import bannerImg from "../../image/K_HEALTHTECH/banner.png"
 import a1 from "../../image/K_HEALTHTECH/Picture1.jpg";
 import a2 from "../../image/K_HEALTHTECH/Picture2.png";
 import a3 from "../../image/K_HEALTHTECH/Picture3.jpg";
 import a4 from "../../image/K_HEALTHTECH/Picture4.jpg";
 import a5 from "../../image/K_HEALTHTECH/Picture5.jpg";
 import a6 from "../../image/K_HEALTHTECH/Picture6.jpg";
-
-const K_HEALTHTECH = () => {
-  const img = "https://fpt.com/-/media/project/fpt-corporation/fpt/common/fpt/our-business/technology/cong-nghe_home.jpg";
+import {
+HelmetHead
+} from "../../components";
+const K_HEALTHTECH = () => {  
 
   const contents = [
     {
@@ -56,7 +58,8 @@ const K_HEALTHTECH = () => {
 console.log(contents);
   return (
     <>
-      <Banner img={img} title="K_HEALTHTECH" />
+    <HelmetHead name="K_HEALTHTECH" title="Giới Thiệu K_HEALTHTECH" description="K_HEALTHTECH"  img={bannerImg} />
+      <Banner img={bannerImg} title="K_HEALTHTECH" />
       <div className="container">
       <div className="br bg-color-2">
         <div className=" bg-color-2">

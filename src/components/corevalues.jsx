@@ -3,10 +3,14 @@ import "./CoreValues.css";
 import Banner from "./child/banner";
 import nhan from "../image/giatri/nhan.png"
 import bannerimg from "../image/banner/giatricotloi.jpg"
+import {
+  HelmetHead
+  } from "../components";
 function corevalues() {
 
       return (
         <>
+         <HelmetHead name="GIÁ TRỊ CỐT LÕI" title="GIÁ TRỊ CỐT LÕI KCL GROUP" description="GIÁ TRỊ"  img={bannerimg} />
         <Banner img={bannerimg} title="Giá trị cốt lõi" />
           <div className="corevalues">
             <div className="header bg-2">

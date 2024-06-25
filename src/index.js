@@ -20,7 +20,8 @@ import {
   Partn,
   History,
   Corevalues,
-  Mission
+  Mission,
+  Profession
 
 } from "./components";
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -33,6 +34,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
      <Route path="/GiaTri" element={<Corevalues />} />
     <Route path="/DoiTac" element={<Partn/>} />
     <Route path="/News" element={<News/>} />
+    <Route path="/Viec-lam" element={<Profession />} />
     <Route path="/SanPham/Solution" element={<K_SOLUTION />}/>
     <Route path="/SanPham/Healthtech" element={<K_HEALTHTECH />} />
     <Route path="/SanPham/Technical" element={<K_TECHNICAL />}/>

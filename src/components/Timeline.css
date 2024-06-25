@@ -144,3 +144,14 @@ article {
     border-right    : 1px  solid #f94125 !important; 
    
 }
+
+.timeline__section .img-bg{
+  background-image: url('../image/bg-hero.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.timeline__section .img-fluid{
+  max-height: 250px;
+} 
+

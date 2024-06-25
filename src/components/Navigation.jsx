@@ -43,8 +43,7 @@ const Navigation =(menu)=> {
                     </div>
                     <a href="/DoiTac" className="nav-item nav-link">ĐỐI TÁC - KHÁCH HÀNG</a>
                     <a href="/News" className="nav-item nav-link">Tin Tức</a>
-                    <a href="project.html" className="nav-item nav-link">CƠ HỘI NGHỀ NGHIỆP</a>
-      
+                    <a href="/Viec-lam" className="nav-item nav-link">CƠ HỘI NGHỀ NGHIỆP</a>
                 </div>
                 <butaton type="button" className="btn  p-0 d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#searchModal"><i className="fa fa-search" /></butaton>
             </div>

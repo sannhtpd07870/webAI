@@ -4,7 +4,8 @@ import Slider from "react-slick";
 import Partner from "./Partner/Partner";
 import "./Partner.css"
 import {
- Banner
+ Banner,
+ HelmetHead
 } from "../components"
 
 import fpt from '../image/client-logo/FPT.png';
@@ -14,7 +15,7 @@ import IBM from '../image/client-logo/IBM.png';
 import Viettel from '../image/client-logo/Viettel.png';
 import Riavita from '../image/client-logo/Riavita.png';
 import vnpt from '../image/client-logo/vnpt.png';
-
+import a from "../image/doi-tac-trong-kinh-doanh.jpg";
 const images = [
   fpt,
   alfa,
@@ -26,9 +27,6 @@ const images = [
     
     // Thêm các tệp hình ảnh khác
   ];
-
-
-  
 function SampleNextArrow(props) {
     const { className, style, onClick } = props;
     return (
@@ -39,7 +37,6 @@ function SampleNextArrow(props) {
       />
     );
   }
-  
   function SamplePrevArrow(props) {
     const { className, style, onClick } = props;
     return (
@@ -52,7 +49,6 @@ function SampleNextArrow(props) {
   }
 
 function PartnerHome() {
-    const a = 'https://fpt.com/-/media/project/fpt-corporation/fpt/news/2024/04/mou-fpt-nvidia.jpg';
     const imagePaths = images.map(image => image.default);
     console.log(imagePaths);
 
@@ -62,12 +58,31 @@ function PartnerHome() {
         slidesToShow: 3,
         slidesToScroll: 1,
         nextArrow: <SampleNextArrow />,
-        prevArrow: <SamplePrevArrow />
+        prevArrow: <SamplePrevArrow />,
+        responsive: [
+        
+          {
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              initialSlide: 2
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
       };
 
 return( 
 <>
-<Banner img={a}title="ĐỐI TÁC-KHÁCH HÀNG    " />
+<HelmetHead name="ĐỐI TÁC-KHÁCH HÀNG" title="Về ĐỐI TÁC-KHÁCH HÀNG Của KCL" description="ĐỐI TÁC-KHÁCH HÀNG "  img={a} />
+<Banner img={a}title="ĐỐI TÁC-KHÁCH HÀNG" />
 <div className="container">
 
 <div className="partener ">

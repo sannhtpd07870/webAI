@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import a3 from "../../image/25.jpg"
 import Contencard from '../item/contenCard';
 import {
-  AboutItem,
+  HelmetHead
 } from "../../components";
 import picture1 from "../../image/K_TECHNICAL/Picture1.png"
 import picture2 from "../../image/K_TECHNICAL/Picture2.png"
@@ -37,6 +37,7 @@ const contents = [
 function K_TECHNICAL() {
   return (
     <>
+     <HelmetHead name="K_TECHNICAL" title="Giới Thiệu K_TECHNICAL" description="K_TECHNICAL"  img={a3} />
       <Banner img={a3} title="K_TECHNICAL" />
       <div className="container">
         <div className="br bg-color-2">
